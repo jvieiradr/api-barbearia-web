@@ -7,7 +7,6 @@ const listarClientes = (req, res) => {
         if(erro) return res.status(400).json(erro);
         return res.status(200).json(data);
     });
-    return res.json('Passou aqui');
 };
 
 export default listarClientes;
