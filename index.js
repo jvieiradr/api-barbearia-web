@@ -11,3 +11,7 @@ const port = process.env.PORT || 8800;
 api.listen(8080, () => {
     console.log('Servidor Iniciado...');
 });
+
+api.get("/", () => {
+    console.log('Ola');
+});
