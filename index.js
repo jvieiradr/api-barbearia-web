@@ -12,6 +12,6 @@ api.listen(8080, () => {
     console.log('Servidor Iniciado...');
 });
 
-api.get("/", () => {
-    console.log('Ola');
+api.get("/", (req, res) => {
+    return res.json('Deu Certo!');
 });
