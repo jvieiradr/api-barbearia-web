@@ -5,7 +5,7 @@ const listarClientes = (req, res) => {
 
     banco.query(query, (erro, data) => {
         if(erro) return res.status(400).json(erro);
-        return res.status(200).json(data);
+        return res.status(200).json(data[0].nome);
     });
 };
 
