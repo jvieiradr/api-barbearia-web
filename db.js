@@ -1,4 +1,4 @@
-import mysql from 'mysql2';
+import mysql2 from 'mysql2';
 /*
 const banco = mysql.createConnection({
     host: 'localhost',
