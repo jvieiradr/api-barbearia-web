@@ -4,6 +4,7 @@ const banco = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'password',
+    port: 3306,
     database: 'barbearia'
 });
 
