@@ -1,0 +1,1 @@
+Para alterar a sequencia do tipo Serial (Auto Increment) utilize 'alter sequence clientes_id_seq restart with 200' sem aspas.

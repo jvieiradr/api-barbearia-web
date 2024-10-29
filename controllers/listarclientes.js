@@ -1,12 +1,13 @@
-import banco from '../db.js';
+import conexao from '../db.js';
 
 const listarClientes = (req, res) => {
-    const mysql_query = 'SELECT * FROM barbearia.clientes ORDER BY nome;';
+    const query = 'SELECT * FROM clientes ORDER BY nome;';
 
-    banco.query(mysql_query, (err, data) => {
-        if(err) return res.status(400).json(err);
-        return res.status(200).json(data);
-    });
+    conexao.query(query, (err, data) => {
+        if (err) return res.json('Erro ao executar a operação.');
+        return res.status(200).json(data.rows)
+});
+
 };
 
 export default listarClientes;
