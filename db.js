@@ -2,21 +2,14 @@ import BancoPkg from 'pg';
 const { Client } = BancoPkg;
 
 const conexao = new Client({
-    host: 'shortly-committed-spitz.data-1.use1.tembo.io',
-    user: 'postgres',
-    password: 'pFqpP6EntDBNSwOO',
+    host: 'dpg-d5e2kf5actks73cfq2ig-a.oregon-postgres.render.com',
+    user: 'barbearia_a9t7_user',
+    password: 'A03qF2f4vnkTPhZU6V2vkMwsmBsQ0IX8',
     port: '5432',
-    database: 'barbearia',
+    database: 'barbearia_a9t7',
     ssl: {
         rejectUnauthorized: false,
     }
-
-  /*host: 'localhost',
-    user: 'postgres',
-    password: 'password',
-    port: '5432',
-    database: 'barbearia'
-    */
 });
 
 conexao.connect()
